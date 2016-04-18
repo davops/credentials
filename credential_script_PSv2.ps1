@@ -1,5 +1,5 @@
-. ".\functions\set-cred.ps1"  
-. ".\functions\get-cred.ps1" 
+. "c:\test\functions\set-cred.ps1"  
+. "c:\test\functions\get-cred.ps1" 
 
 $file = "c:\test\credential_file_for_" + $env:username + ".xml"
 if(!(Test-Path $file)){set-Cred $file}
